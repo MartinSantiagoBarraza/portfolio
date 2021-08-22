@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Nunito&family=Roboto&display=swap");
+
+.projects {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  height: 58rem;
+
+  & h2 {
+    text-align: start;
+    padding-bottom: 2rem;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      text-align: center;
+    }
+  }
+
+  & .projects_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding-top: 1rem;
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      gap: 7rem;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 1300px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    max-width: 90vw;
+    height: 1400px;
+  }
+}

@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Roboto:ital@0;1&display=swap");
+
+.card {
+  width: 20rem;
+  height: 19rem;
+  background-color: rgb(229, 229, 235);
+  //box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 10px 10px 24px;
+
+  & .card_img {
+    height: 9rem;
+    width: 20rem;
+    & img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  & .card_description {
+    height: 8rem;
+    width: 20rem;
+    & h3 {
+      text-align: center;
+    }
+    & p {
+      text-align: start;
+      margin-left: 0.5rem;
+      font-family: "Nunito", sans-serif;
+    }
+  }
+
+  & .btns_container {
+    background-color: rgb(229, 229, 235);
+    //box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 10px 10px 24px;
+    height: 4rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    & a {
+    }
+
+    & .demo_btn {
+      background-color: #fff;
+      height: 2.5rem;
+      width: 7rem;
+      border-radius: 25px;
+      border: none;
+      margin-right: 0.7rem;
+      & i {
+        padding: 0.2rem;
+      }
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all 800ms;
+      }
+    }
+    & .github_btn {
+      background-color: black;
+      color: #fff;
+      height: 2.5rem;
+      width: 7rem;
+      border-radius: 25px;
+      border: none;
+      margin-left: 0.7rem;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all 800ms;
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Nunito&family=Roboto&display=swap");
+
+.contact {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  height: 18rem;
+
+  & h2 {
+    text-align: start;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+    padding-bottom: 2rem;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      text-align: center;
+    }
+  }
+
+  & .contact_container {
+    padding-bottom: 1rem;
+
+    @media screen and (max-width: 767px) {
+      width: 90vw;
+    }
+
+    & ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+      list-style-type: none;
+
+      @media screen and (max-width: 767px) {
+        gap: 3rem;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        gap: 6rem;
+      }
+
+      & li {
+        &:hover {
+          cursor: pointer;
+        }
+        & a {
+          text-decoration: none;
+          color: #000;
+          &:visited {
+            color: #000;
+          }
+          &:hover {
+            cursor: pointer;
+            color: #333;
+            transition: all 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+
+  & hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+
+    @media screen and (max-width: 767px) {
+      width: 90vw;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      width: 90vw;
+    }
+  }
+
+  & .footer_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

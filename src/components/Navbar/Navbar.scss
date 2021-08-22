@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Nunito&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #fff;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: sticky;
+  top: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  z-index: 2;
+
+  & .navbar_brand {
+    & h2 {
+      font-family: "Roboto", sans-serif;
+    }
+    & a {
+      text-decoration: none;
+      color: #000;
+      &:visited {
+        color: #000;
+      }
+      &:hover {
+        cursor: pointer;
+        color: red;
+        transition: all 0.3s ease-in;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 0.9rem;
+      text-align: center;
+      display: block;
+      width: 100%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      margin-left: 0.4rem;
+    }
+  }
+
+  & .navbar_logo {
+    height: 4rem;
+    width: 4rem;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  & .navbar_list {
+    & ul {
+      display: flex;
+      flex-direction: row;
+      font-family: "Nunito", sans-serif;
+      list-style-type: none;
+      gap: 2rem;
+      & li {
+        font-size: 1rem;
+        display: inline-block;
+
+        & a {
+          text-decoration: none;
+          color: #000;
+
+          @media screen and (max-width: 767px) {
+            color: #000;
+          }
+
+          &:visited {
+            color: #000;
+          }
+          &:hover {
+            cursor: pointer;
+            color: red;
+            transition: all 0.2s ease-in;
+          }
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1.7rem;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        gap: 2rem;
+        margin-right: 3rem;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: row;
+      margin-right: 0rem;
+      margin-left: 4rem;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    max-width: 100vw;
+    height: 9rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    max-width: 90vw;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+}

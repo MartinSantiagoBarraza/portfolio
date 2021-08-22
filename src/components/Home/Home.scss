@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Nunito&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+
+  & .home_description {
+    width: 60%;
+    & h1 {
+      font-family: "Roboto", sans-serif;
+      text-align: start;
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+      font-size: 40px;
+    }
+    & p {
+      font-family: "Nunito", sans-serif;
+      text-align: start;
+      font-size: 1.1rem;
+
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  & .home_image {
+    height: 12rem;
+    width: 12rem;
+    & img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+    padding-top: 1rem;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 85vw;
+  }
+}
