@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="home_description">
                     <h1>Hi there, I'm Santiago!</h1>
                     <p>Welcome to my portfolio! Here you'll find my story, projects and a way to get in touch with me.</p>
-                    <p>I love making tools that are user-friendly, simple and delightful. I am looking for my <RoughNotation type="highlight" animate="true" color="lightblue" show="true">first <strong>Full Stack Development</strong> job.</RoughNotation></p>
+                    <p>I <RoughNotation type="highlight" animate="true" color="lightblue" show="true">love making apps</RoughNotation> that are user-friendly, simple and delightful. I am looking for my first <strong>Full Stack Development</strong> job.</p>
                 </div>
             </Slide>
             <div className="home_image"><img src={croppedCvPicture} alt="Profile" /></div>
