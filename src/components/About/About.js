@@ -6,9 +6,9 @@ const About = () => {
     <div className="about" id="about">
       <h2>About Me</h2>
       <p>
-        Hello! I'm 25 years old, working as a Tech Sourcer at{" "}
+        I'm 25 years old, working as a Tech Sourcer at{" "}
         <strong>RocketPower</strong> and soon to study Web Development at{" "}
-        <strong>UADE</strong>. My goal is to work on a company as a{" "}
+        <strong>UADE</strong>. My goal in the short term is to work as a{" "}
         <strong>Frontend Developer</strong>.
       </p>
       <p>
